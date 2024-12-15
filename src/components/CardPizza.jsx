@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/CardPizza.css';
+import { formatNumber } from '../utils/formatNumber';
 
 const CardPizza = (props) => {  
   return (
@@ -11,7 +12,7 @@ const CardPizza = (props) => {
         <p className='ingredientes'>🍕 {props.ingredients.join(", ")}</p>
       </div>
       <div className='price-container'>
-        <p className='price'>Precio: $ {props.price}</p>
+        <p className='price'>Precio: $ {formatNumber(props.price)}</p>
         <div className='price-button'>
           <button className='vermas'>Ver más</button>  
           <button className='anadir'>Añadir 🛒</button>

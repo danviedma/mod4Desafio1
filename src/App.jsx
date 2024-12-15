@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Button } from 'bootstrap'
 import Button from 'react-bootstrap/Button'
 import Home from './components/Home'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      
+      <Footer />
     </>
   )
 }

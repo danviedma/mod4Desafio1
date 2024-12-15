@@ -1,9 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/Navbar.css";
+import { formatNumber } from "../utils/formatNumber";
 
 const Navbar = () => {
-  const token = false; 
+  const token = true; 
   const total = 25000;
 
   return (
@@ -61,7 +62,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link nav-button" id="total" href="#">
-                🛒 Total: $<span>{total}</span>
+                🛒 Total: $<span>{formatNumber(total)}</span>
               </a>
             </li>
           </ul>
